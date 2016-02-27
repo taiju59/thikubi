@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="icomoon.ttf">
+            <string>icomoon</string>
+            <string>icomoon</string>
+            <string>icomoon</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="thikubi" customModuleProvider="target">
+            <connections>
+                <outlet property="clearColorLabel" destination="7Gn-lj-lSe" id="ZWd-q6-Xvn"/>
+                <outlet property="clearFadeInLabel" destination="Cpj-2k-rEG" id="5Gt-7S-v1F"/>
+                <outlet property="clearNextBtn" destination="cYc-Fh-VBT" id="Mqz-Ju-nzo"/>
+                <outlet property="clearSideLabel" destination="K5A-RN-i8F" id="Xz1-ou-6Qj"/>
+                <outlet property="clearTouchCountLabel" destination="QUx-jW-fK2" id="fnB-Bw-77H"/>
+                <outlet property="nadView" destination="lH7-W3-6hK" id="yx3-ky-QHR"/>
+                <outlet property="resetToStartBottomMargin" destination="Tnd-cT-SOk" id="nX1-rO-XJv"/>
+                <outlet property="resetTostartBtn" destination="4La-xI-SrX" id="fKY-Je-yUt"/>
+                <outlet property="settingButton" destination="59A-yC-p8w" id="dC2-oh-Z7Z"/>
+                <outlet property="shareBtn" destination="04q-Vy-Nqf" id="ZpO-wP-vol"/>
+                <outlet property="showGameCenterBtn" destination="gul-kg-7xY" id="dAP-nq-s3P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Sup-7f-ikn">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HrG-Ky-o7J" userLabel="ad dummy view">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lH7-W3-6hK" customClass="NADView">
+                            <rect key="frame" x="140" y="0.0" width="320" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="lgE-je-BaJ"/>
+                                <constraint firstAttribute="width" constant="320" id="uPG-ya-FSs"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nendApiKey" value="712f68c6076ac4973f3e2e9614e880ac3d59e0e2"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="nendSpotID" value="484077"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isAdjustAdSize" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="1Tv-oo-5lf"/>
+                        <constraint firstItem="lH7-W3-6hK" firstAttribute="centerX" secondItem="HrG-Ky-o7J" secondAttribute="centerX" id="KiS-Lu-6Nr"/>
+                        <constraint firstAttribute="bottom" secondItem="lH7-W3-6hK" secondAttribute="bottom" id="mdO-dO-sDg"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="QUx-jW-fK2">
+                    <rect key="frame" x="125" y="35" width="251" height="151"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" priority="750" constant="250" id="3Ja-iJ-esC"/>
+                        <constraint firstAttribute="height" constant="151" id="uCY-eR-6nb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="150"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="つつきで" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5A-RN-i8F">
+                    <rect key="frame" x="384" y="162" width="68" height="24"/>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04q-Vy-Nqf">
+                    <rect key="frame" x="424" y="490" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="PtD-Fm-UGX"/>
+                        <constraint firstAttribute="height" constant="40" id="udY-ml-Spc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="30"/>
+                    <state key="normal" title="S"/>
+                    <connections>
+                        <action selector="share:" destination="-1" eventType="touchUpInside" id="B56-Sy-8ed"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4La-xI-SrX" customClass="FlatButton" customModule="thikubi" customModuleProvider="target">
+                    <rect key="frame" x="204" y="416" width="192" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="192" id="UzR-XF-Vmj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
+                    <state key="normal" title=" Start at Black ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="resetToStart" destination="-1" eventType="touchUpInside" id="JHy-lv-mf6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gul-kg-7xY">
+                    <rect key="frame" x="482" y="490" width="40" height="40"/>
+                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="30"/>
+                    <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                    <state key="normal" title="G"/>
+                    <connections>
+                        <action selector="GamecenterInit" destination="-1" eventType="touchUpInside" id="yx8-Wn-WNf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxに脱色できた！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gn-lj-lSe">
+                    <rect key="frame" x="215" y="194" width="170" height="28"/>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="すべりこむラベル" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="Cpj-2k-rEG">
+                    <rect key="frame" x="488" y="230" width="104" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="290" id="2jr-CG-ddK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYc-Fh-VBT" customClass="FlatButton" customModule="thikubi" customModuleProvider="target">
+                    <rect key="frame" x="204" y="354" width="192" height="44"/>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextMode" destination="-1" eventType="touchUpInside" id="di9-B9-Qyi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59A-yC-p8w" userLabel="SETTING">
+                    <rect key="frame" x="540" y="490" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="YUy-gC-S59"/>
+                        <constraint firstAttribute="height" constant="40" id="woM-kX-f3r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="icomoon" family="icomoon" pointSize="30"/>
+                    <state key="normal" title="F"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="YUy-gC-S59"/>
+                            <exclude reference="woM-kX-f3r"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="toSetting:" destination="-1" eventType="touchUpInside" id="6EY-9y-xNE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="59A-yC-p8w" secondAttribute="trailing" constant="20" id="0CW-mh-cfo"/>
+                <constraint firstItem="Cpj-2k-rEG" firstAttribute="top" secondItem="7Gn-lj-lSe" secondAttribute="bottom" constant="8" id="3hn-u8-fOA"/>
+                <constraint firstAttribute="trailing" secondItem="Cpj-2k-rEG" secondAttribute="trailing" constant="8" id="3mg-og-JkT"/>
+                <constraint firstAttribute="trailing" secondItem="HrG-Ky-o7J" secondAttribute="trailing" id="5Bb-wH-HUy"/>
+                <constraint firstItem="59A-yC-p8w" firstAttribute="width" secondItem="gul-kg-7xY" secondAttribute="width" id="5pD-ks-llB"/>
+                <constraint firstItem="4La-xI-SrX" firstAttribute="top" secondItem="cYc-Fh-VBT" secondAttribute="bottom" constant="18" id="AJD-Rv-O3u"/>
+                <constraint firstItem="QUx-jW-fK2" firstAttribute="top" secondItem="Sup-7f-ikn" secondAttribute="top" constant="35" id="Bca-iB-fv7"/>
+                <constraint firstItem="HrG-Ky-o7J" firstAttribute="top" secondItem="59A-yC-p8w" secondAttribute="bottom" constant="20" id="COS-sw-eR7"/>
+                <constraint firstItem="59A-yC-p8w" firstAttribute="centerY" secondItem="gul-kg-7xY" secondAttribute="centerY" id="EoF-Fw-tN3"/>
+                <constraint firstItem="4La-xI-SrX" firstAttribute="centerX" secondItem="Sup-7f-ikn" secondAttribute="centerX" id="HfC-VN-lqu"/>
+                <constraint firstAttribute="bottom" secondItem="59A-yC-p8w" secondAttribute="bottom" constant="25" id="JFB-7s-upS"/>
+                <constraint firstItem="7Gn-lj-lSe" firstAttribute="centerX" secondItem="Sup-7f-ikn" secondAttribute="centerX" id="Mkh-4s-9v0"/>
+                <constraint firstItem="cYc-Fh-VBT" firstAttribute="centerX" secondItem="Sup-7f-ikn" secondAttribute="centerX" id="Mq4-rJ-fWy"/>
+                <constraint firstItem="cYc-Fh-VBT" firstAttribute="height" secondItem="4La-xI-SrX" secondAttribute="height" id="NGU-ZA-6Zl"/>
+                <constraint firstItem="04q-Vy-Nqf" firstAttribute="width" secondItem="gul-kg-7xY" secondAttribute="width" id="Nc9-UF-lZP"/>
+                <constraint firstAttribute="bottom" secondItem="HrG-Ky-o7J" secondAttribute="bottom" id="RwU-Zd-TZ1"/>
+                <constraint firstItem="HrG-Ky-o7J" firstAttribute="leading" secondItem="Sup-7f-ikn" secondAttribute="leading" id="Tdj-9f-3lc"/>
+                <constraint firstAttribute="bottom" secondItem="4La-xI-SrX" secondAttribute="bottom" constant="140" id="Tnd-cT-SOk"/>
+                <constraint firstItem="QUx-jW-fK2" firstAttribute="centerX" secondItem="Sup-7f-ikn" secondAttribute="centerX" priority="250" constant="-50" id="Vee-j4-J2g"/>
+                <constraint firstItem="59A-yC-p8w" firstAttribute="leading" secondItem="gul-kg-7xY" secondAttribute="trailing" constant="18" id="XA6-kP-BpD"/>
+                <constraint firstItem="QUx-jW-fK2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Sup-7f-ikn" secondAttribute="leading" constant="15" id="Zor-Pb-Jxc"/>
+                <constraint firstItem="cYc-Fh-VBT" firstAttribute="width" secondItem="4La-xI-SrX" secondAttribute="width" id="eqx-kt-qbS"/>
+                <constraint firstItem="59A-yC-p8w" firstAttribute="height" secondItem="gul-kg-7xY" secondAttribute="height" id="fla-v5-2eN"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="K5A-RN-i8F" secondAttribute="trailing" constant="15" id="hqB-DR-MvL"/>
+                <constraint firstItem="K5A-RN-i8F" firstAttribute="leading" secondItem="QUx-jW-fK2" secondAttribute="trailing" constant="8" id="iYi-Gs-cxN"/>
+                <constraint firstItem="K5A-RN-i8F" firstAttribute="bottom" secondItem="QUx-jW-fK2" secondAttribute="bottom" id="j85-3Q-KSz"/>
+                <constraint firstItem="7Gn-lj-lSe" firstAttribute="top" secondItem="QUx-jW-fK2" secondAttribute="bottom" constant="8" id="kVN-iG-kjB"/>
+                <constraint firstItem="gul-kg-7xY" firstAttribute="leading" secondItem="04q-Vy-Nqf" secondAttribute="trailing" constant="18" id="lZc-Rb-jA3"/>
+                <constraint firstItem="04q-Vy-Nqf" firstAttribute="height" secondItem="gul-kg-7xY" secondAttribute="height" id="qd9-fr-jUS"/>
+                <constraint firstItem="gul-kg-7xY" firstAttribute="centerY" secondItem="04q-Vy-Nqf" secondAttribute="centerY" id="sAq-VK-BOB"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="JFB-7s-upS"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="665" y="374"/>
+        </view>
+    </objects>
+</document>

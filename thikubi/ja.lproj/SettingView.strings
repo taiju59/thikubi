@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Hit Voice"; ObjectID = "3k7-xq-Ebo"; */
+"3k7-xq-Ebo.text" = "ヒットのセリフ";
+
+/* Class = "UITextField"; placeholder = "日本語/英語 8字以内"; ObjectID = "DlL-Kr-wmB"; */
+"DlL-Kr-wmB.placeholder" = "日本語/英語 8字以内";
+
+/* Class = "UITextField"; text = "素晴らしい"; ObjectID = "DlL-Kr-wmB"; */
+"DlL-Kr-wmB.text" = "すごいね";
+
+/* Class = "UILabel"; text = "Critical Hit Voice"; ObjectID = "FqO-0M-rdQ"; */
+"FqO-0M-rdQ.text" = "すごいヒットのセリフ";
+
+/* Class = "UITextField"; placeholder = "日本語/英語 8字以内"; ObjectID = "MiB-8X-n8F"; */
+"MiB-8X-n8F.placeholder" = "日本語/英語 8字以内";
+
+/* Class = "UITextField"; text = "Good"; ObjectID = "MiB-8X-n8F"; */
+"MiB-8X-n8F.text" = "いいね";
+
+/* Class = "UILabel"; text = "Background Color"; ObjectID = "cc6-vs-gPV"; */
+"cc6-vs-gPV.text" = "背景の色";
+
+/* Class = "UIButton"; normalTitle = "×"; ObjectID = "mBb-EE-2ql"; */
+"mBb-EE-2ql.normalTitle" = "×";

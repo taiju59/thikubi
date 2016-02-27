@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = " Start at Black "; ObjectID = "4La-xI-SrX"; */
+"4La-xI-SrX.normalTitle" = " はじめから ";
+
+/* Class = "UILabel"; text = "xxxに脱色できた！"; ObjectID = "7Gn-lj-lSe"; */
+"7Gn-lj-lSe.text" = "xxxに脱色できた！";
+
+/* Class = "UILabel"; text = "すべりこむラベル"; ObjectID = "Cpj-2k-rEG"; */
+"Cpj-2k-rEG.text" = "すべりこむラベル";
+
+/* Class = "UILabel"; text = "つつきで"; ObjectID = "K5A-RN-i8F"; */
+"K5A-RN-i8F.text" = "つつきで";
+
+/* Class = "UILabel"; text = "000"; ObjectID = "QUx-jW-fK2"; */
+"QUx-jW-fK2.text" = "000";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "cYc-Fh-VBT"; */
+"cYc-Fh-VBT.normalTitle" = "もっとつつく";

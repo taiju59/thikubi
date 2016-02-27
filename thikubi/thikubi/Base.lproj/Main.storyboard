@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="thikubi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Bza-vf-ZYm" kind="presentation" identifier="toSetting" modalTransitionStyle="coverVertical" id="Tyv-yF-5cz"/>
+                        <segue destination="ioL-qN-H1P" kind="presentation" identifier="toTutorial" modalTransitionStyle="crossDissolve" id="zuN-GX-fdb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="1780"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="rqD-SC-6us">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ioL-qN-H1P" customClass="TutorialViewController" customModule="thikubi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Odr-rR-mM4"/>
+                        <viewControllerLayoutGuide type="bottom" id="IrN-8T-wEE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OQa-Mw-CuQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showMainView" modalTransitionStyle="crossDissolve" id="Ulg-Hr-5TS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hll-bH-lQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="2834"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="xpd-s7-4XF">
+            <objects>
+                <viewController id="Bza-vf-ZYm" userLabel="Setting View Controller" customClass="SettingViewController" customModule="thikubi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F8D-kP-zLf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rbc-th-7Mp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mbk-wN-0cX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ykC-Ox-OM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="1780"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="COf-SS-482">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ntq-sV-5hf" customClass="ContentViewController" customModule="thikubi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WgG-Bv-DNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="XpU-y9-Fcb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dUA-aZ-Lwb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jlp-Mx-Duw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jlp-Mx-Duw" secondAttribute="bottom" id="Qtd-6H-wMA"/>
+                            <constraint firstItem="jlp-Mx-Duw" firstAttribute="leading" secondItem="dUA-aZ-Lwb" secondAttribute="leading" id="SWH-H7-gf2"/>
+                            <constraint firstItem="jlp-Mx-Duw" firstAttribute="top" secondItem="dUA-aZ-Lwb" secondAttribute="top" id="gTj-FS-iIQ"/>
+                            <constraint firstAttribute="trailing" secondItem="jlp-Mx-Duw" secondAttribute="trailing" id="waN-PI-34A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="jlp-Mx-Duw" id="d7K-P4-54E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djv-q2-t5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168" y="2502"/>
+        </scene>
+    </scenes>
+</document>

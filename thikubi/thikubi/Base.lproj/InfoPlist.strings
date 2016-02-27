@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  thikubi
+
+  Created by Taiju Aoki on 2016/02/03.
+  Copyright © 2016年 Taiju Aoki. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Decolor Me!";
+"CFBundleName" = "Decolor Me!";

@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "すべりこむラベル"; ObjectID = "C8V-BX-t5U"; */
+"C8V-BX-t5U.text" = "すべりこむラベル";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "Xb7-oK-fOJ"; */
+"Xb7-oK-fOJ.normalTitle" = "ま、負けてないもん";
+
+/* Class = "UIButton"; normalTitle = "Give Up"; ObjectID = "v0o-On-Ep6"; */
+"v0o-On-Ep6.normalTitle" = "はい。負けました";
+
+/* Class = "UILabel"; text = "GAME OVER"; ObjectID = "xor-e1-7Mf"; */
+"xor-e1-7Mf.text" = "GAME OVER";

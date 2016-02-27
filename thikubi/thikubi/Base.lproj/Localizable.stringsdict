@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>region_code</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>base</string>
+	</dict>
+	<key>word_next</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Next</string>
+	</dict>
+	<key>word_back</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Back</string>
+	</dict>
+	<key>word_skip</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Start</string>
+	</dict>
+	<key>default_good_voice</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Good</string>
+	</dict>
+	<key>default_great_voice</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Fantastic</string>
+	</dict>
+	<key>game_center_alert_title</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Sign in with Game Center!</string>
+	</dict>
+	<key>game_center_alert_msg</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Sign in with Game Center and compete against friends!</string>
+	</dict>
+	<key>game_center_alert_ok</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Sign in</string>
+	</dict>
+	<key>game_center_alert_no</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>I&apos;m lonely</string>
+	</dict>
+	<key>time_mode_release_alert_title</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Congratulations! Time Attack Mode is rereased!</string>
+	</dict>
+	<key>time_mode_release_alert_msg</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Tap new button to switch Time Attack Mode!</string>
+	</dict>
+	<key>review_alert_title</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Rate Don&apos;t Touch Me!</string>
+	</dict>
+	<key>review_alert_msg</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>If you enjoy using Don&apos;t Touch Me!, would you mind taking a moment to rate it? It won&apos;t take more than a minute. Thanks for your support!</string>
+	</dict>
+	<key>review_alert_ok</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Rate Don&apos;t Touch Me!</string>
+	</dict>
+	<key>review_alert_remind_later</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Remind me later</string>
+	</dict>
+	<key>review_alert_no</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>No, thanks</string>
+	</dict>
+	<key>clear_color_easy</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>BROWN</string>
+	</dict>
+	<key>clear_color_normal</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>PINK</string>
+	</dict>
+	<key>clear_color_hard</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>WHITE</string>
+	</dict>
+	<key>clear_seide_label_touch</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>touches</string>
+	</dict>
+	<key>clear_seide_label_second</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>seconds</string>
+	</dict>
+	<key>clear_color_label</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Decolor %@!</string>
+	</dict>
+	<key>clear_fade_in_label1</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Almost! Less than %d, and Decolor more</string>
+	</dict>
+	<key>clear_fade_in_label2</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Almost! Less than %d, and Decolor in another mode</string>
+	</dict>
+	<key>share_msg</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%1@ %2@ %3@ Let you Decolor together!</string>
+	</dict>
+	<key>game_over_str1</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>It&apos;s Hard for you, isn&apos;t it ?</string>
+	</dict>
+	<key>game_over_str2</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>まだまだこれからさ。たぶん</string>
+	</dict>
+	<key>game_over_str3</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>他にすることないの？</string>
+	</dict>
+	<key>game_over_str4</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Ah.. Don&apos;t mind.</string>
+	</dict>
+	<key>game_over_str5</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>ちゃんと家の鍵閉めた？</string>
+	</dict>
+	<key>game_over_str6</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>This is your mind Color.</string>
+	</dict>
+	<key>game_over_str7</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Which is Darker, this or yours?</string>
+	</dict>
+	<key>chikubi_trivia1</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>It&apos;s average size circumference of McDonald&apos;s straw</string>
+	</dict>
+	<key>chikubi_trivia2</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Originally Even human one was cocked to groin</string>
+	</dict>
+	<key>chikubi_trivia3</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Tiger mask seems one of the two had been depressed</string>
+	</dict>
+	<key>chikubi_trivia4</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>It says that color change with age.</string>
+	</dict>
+	<key>chikubi_trivia5</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Depression they is Even &apos;m delicate because they are protected usually</string>
+	</dict>
+	<key>chikubi_trivia6</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Color of them wonder if I really the same as the color of the anus</string>
+	</dict>
+	<key>chikubi_trivia7</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Seems to baby is easier to find the black and give birth is</string>
+	</dict>
+	<key>chikubi_trivia8</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Their size is estimated size of the diameter of the tobacco</string>
+	</dict>
+	<key>chikubi_trivia9</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>The Worst Summer Fashion of the man is &quot;Show through them&quot;</string>
+	</dict>
+	<key>chikubi_trivia10</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>The number of them of dog cat rabbit was unexpected</string>
+	</dict>
+	<key>chikubi_trivia11</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Smell around them seems to tend to be smelly to say &quot; Chichiga &quot;</string>
+	</dict>
+	<key>chikubi_trivia12</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Even it becomes Purunpurun and apply the lip balm</string>
+	</dict>
+	<key>chikubi_trivia13</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>It blames the hormone balance of dark is not &apos;s experience the number of colors</string>
+	</dict>
+	<key>chikubi_trivia14</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Even I got a cream paint to avoid rubbing male marathoner</string>
+	</dict>
+	<key>chikubi_trivia15</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>You know the name of the part that pinch the dropper used in science experiments ?</string>
+	</dict>
+	<key>chikubi_trivia16</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Dominant arm if there is like a them handed Even &apos;m left-handed often</string>
+	</dict>
+	<key>chikubi_trivia17</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Lifeline for bat&apos;s them  is that you do not fall children</string>
+	</dict>
+</dict>
+</plist>
