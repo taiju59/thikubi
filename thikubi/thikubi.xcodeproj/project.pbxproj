@@ -826,7 +826,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.thikubi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "529f51aa-6a9d-4035-8ca9-4d5346ea22ed";
+				PROVISIONING_PROFILE = "12802acf-42ee-44ed-a180-c3f9f376b458";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridge-Header.h";
 			};
 			name = Debug;
@@ -846,7 +846,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.thikubi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "913f4a83-989f-4f22-8a9f-c23f2b380457";
+				PROVISIONING_PROFILE = "2bd6128b-b336-4836-b5f8-f6bc52e6e036";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridge-Header.h";
 			};
 			name = Release;
