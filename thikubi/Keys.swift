@@ -23,7 +23,7 @@ class Keys {
     static let NORMAL_DIC = "normal_dic"
     static let HARD_DIC = "hard_dic"
     
-    static let REVIEWED = "reviewed\(APP_VERSION)"
+    static let REVIEWED = "reviewed\(String(describing: APP_VERSION))"
     
     static let FIRST_LAUNCH = "firstLaunch"
     

@@ -12,26 +12,26 @@ class FlatButton: UIButton {
 
     private var defaultBackGroundColor: UIColor?  {
         get {
-            return self.titleColorForState(.Highlighted)
+            return self.titleColor(for: .highlighted)
         }
     }
-    
+
     private var defaultTitleColor: UIColor?   {
         get {
-            return self.titleColorForState(.Normal)
+            return self.titleColor(for: .normal)
         }
     }
-    
+
     @IBInspectable var borderColor : UIColor? {
         get {
-            return UIColor(CGColor: super.layer.borderColor ?? UIColor().CGColor)
+            return UIColor(cgColor: super.layer.borderColor ?? UIColor().cgColor)
         }
         set {
             let value = newValue
-            super.layer.borderColor = value?.CGColor
+            super.layer.borderColor = value?.cgColor
         }
     }
-    
+
     @IBInspectable var borderWidth : CGFloat {
         get {
             return super.layer.borderWidth
@@ -41,7 +41,7 @@ class FlatButton: UIButton {
                 super.layer.borderWidth = value
         }
     }
-    
+
     @IBInspectable var cornerRadius : CGFloat {
         get {
             return super.layer.cornerRadius
@@ -51,28 +51,28 @@ class FlatButton: UIButton {
             super.layer.cornerRadius = value
         }
     }
-    
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+
         self.backgroundColor = self.defaultTitleColor
-        super.touchesBegan(touches, withEvent: event)
+        super.touchesBegan(touches, with: event)
     }
-    
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesEnded(touches, withEvent: event)
+
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
         self.backgroundColor = self.defaultBackGroundColor
     }
-    
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-        super.touchesCancelled(touches, withEvent: event)
+
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
         self.backgroundColor = self.defaultBackGroundColor
     }
-    
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        super.touchesMoved(touches, withEvent: event)
-        if self.state != .Highlighted {
+
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        if self.state != .highlighted {
             self.backgroundColor = self.defaultBackGroundColor
         }
     }
-    
+
 }

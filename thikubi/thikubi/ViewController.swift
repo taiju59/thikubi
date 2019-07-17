@@ -16,21 +16,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+    }
+
+    override var prefersStatusBarHidden: Bool {
         // ステータスバーを表示する
-        UIApplication.sharedApplication().statusBarHidden = false
-        
+        return true
     }
 
     func loadXibView(nibName: String) {
-        let xibView = UINib(nibName: nibName, bundle: nil).instantiateWithOwner(self, options: nil)[0] as! UIView
+        let xibView = UINib(nibName: nibName, bundle: nil).instantiate(withOwner: self, options: nil)[0] as! UIView
         xibView.frame = self.view.frame
         self.view = xibView
     }
     
     //MARK - common settings
     //MARK: - Touched
-    @IBAction func somethingTouched(sender: UIButton) {
+    @IBAction func somethingTouched(_ sender: UIButton) {
         
         if THIKUBI_ALL || sender.tag == 1 {
             chikubiTapped()
@@ -46,22 +47,22 @@ class ViewController: UIViewController {
     
     func chikubiTapped() {
         
-        VoiceManager.voice(voice2)
-        UIView.animateWithDuration(
+        VoiceManager.voice(yomiageStr: voice2)
+        UIView.animate(withDuration:
             0.2,
             delay:0,
-            options:.CurveEaseInOut,
+            options:.curveEaseInOut,
             animations: {() -> Void in
-                self.chikubiRight.transform = CGAffineTransformMakeScale(2, 2)
-                self.chikubiLeft.transform = CGAffineTransformMakeScale(2, 2)
+                self.chikubiRight.transform = CGAffineTransform(scaleX: 2, y: 2)
+                self.chikubiLeft.transform = CGAffineTransform(scaleX: 2, y: 2)
             }) { (Bool) -> Void in
-                UIView.animateWithDuration(
+                UIView.animate(withDuration:
                     0.3,
                     delay:0,
-                    options:.CurveEaseInOut,
+                    options:.curveEaseInOut,
                     animations: {() -> Void in
-                        self.chikubiRight.transform = CGAffineTransformIdentity
-                        self.chikubiLeft.transform = CGAffineTransformIdentity
+                        self.chikubiRight.transform = .identity
+                        self.chikubiLeft.transform = .identity
                     },
                     completion: nil
                 )
@@ -70,22 +71,22 @@ class ViewController: UIViewController {
     
     func aroundTapped() {
         
-        VoiceManager.voice(voice1)
-        UIView.animateWithDuration(
+        VoiceManager.voice(yomiageStr: voice1)
+        UIView.animate(withDuration:
             0.1,
             delay:0.0,
-            options:.AllowUserInteraction,
+            options:.allowUserInteraction,
             animations: {() -> Void in
-                self.chikubiRight.transform = CGAffineTransformMakeScale(1.2, 1.2)
-                self.chikubiLeft.transform = CGAffineTransformMakeScale(1.2, 1.2)
+                self.chikubiRight.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+                self.chikubiLeft.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
             }) { (Bool) -> Void in
-                UIView.animateWithDuration(
+                UIView.animate(withDuration:
                     0.05,
                     delay:0.0,
-                    options:.AllowUserInteraction,
+                    options:.allowUserInteraction,
                     animations: {() -> Void in
-                        self.chikubiRight.transform = CGAffineTransformIdentity;
-                        self.chikubiLeft.transform = CGAffineTransformIdentity;
+                        self.chikubiRight.transform = .identity;
+                        self.chikubiLeft.transform = .identity;
                     },
                     completion: nil
                 )
@@ -94,22 +95,22 @@ class ViewController: UIViewController {
     
     func touchExceptChikubi() {
         
-        VoiceManager.voice("Don't touch me!")
-        UIView.animateWithDuration(
+        VoiceManager.voice(yomiageStr: "Don't touch me!")
+        UIView.animate(withDuration:
             0.1,
             delay:0,
-            options:.CurveEaseInOut,
+            options:.curveEaseInOut,
             animations: {() -> Void in
-                self.chikubiRight.transform = CGAffineTransformMakeScale(0.5, 0.5)
-                self.chikubiLeft.transform = CGAffineTransformMakeScale(0.5, 0.5)
+                self.chikubiRight.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+                self.chikubiLeft.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
             }) { (Bool) -> Void in
-                UIView.animateWithDuration(
+                UIView.animate(withDuration:
                     0.1,
                     delay:0.0,
-                    options:.AllowUserInteraction,
+                    options:. allowUserInteraction,
                     animations: {() -> Void in
-                        self.chikubiRight.transform = CGAffineTransformIdentity;
-                        self.chikubiLeft.transform = CGAffineTransformIdentity;
+                        self.chikubiRight.transform = .identity;
+                        self.chikubiLeft.transform = .identity;
                     },
                     completion: nil
                 )

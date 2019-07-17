@@ -15,12 +15,12 @@ import UIKit
 let APP_ID: String = "1018869946"
 let APPIRATER_APP_NAME: String = "Don't Touch me！"
 let APP_STORE_URL: String = "https://appsto.re/jp/6IRU8.i"
-let APP_VERSION = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString")
+let APP_VERSION = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
 
 // 何度目の白クリアでレビューを依頼するか
 let REVIEW_CLEAR_COUNT: Int = 5
 
-let SCREEN_HEIGHT: CGFloat = UIScreen.mainScreen().bounds.height
+let SCREEN_HEIGHT: CGFloat = UIScreen.main.bounds.height
 let BOMB_RATE: CGFloat = (SCREEN_HEIGHT * 2)/15
 
 /*--------------------------------------------------

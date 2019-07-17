@@ -14,12 +14,8 @@
 		F61CA0A11C28471000032FC2 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CA0A01C28471000032FC2 /* SceneKit.framework */; };
 		F61CA0A31C28CF7000032FC2 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CA0A21C28CF7000032FC2 /* FlatButton.swift */; };
 		F61CA0A51C2AD99500032FC2 /* GKLocalPlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CA0A41C2AD99500032FC2 /* GKLocalPlayerUtil.swift */; };
-		F61CA0B41C2AEE3B00032FC2 /* libNendAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CA0A71C2AEE3B00032FC2 /* libNendAd.a */; };
-		F61CA0B51C2AEE3B00032FC2 /* NADView_readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = F61CA0B31C2AEE3B00032FC2 /* NADView_readme.txt */; };
-		F61CA0B71C2AEED700032FC2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CA0B61C2AEED700032FC2 /* AdSupport.framework */; };
 		F61CA0B91C2AEEE800032FC2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CA0B81C2AEEE800032FC2 /* ImageIO.framework */; };
 		F61CA0BB1C2AEEF800032FC2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CA0BA1C2AEEF800032FC2 /* Security.framework */; };
-		F6423BC21BE052D300C5514C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6423BC11BE052D300C5514C /* iAd.framework */; };
 		F64DC45F1BBEC7B5007C2A1E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64DC45E1BBEC7B5007C2A1E /* MainViewController.swift */; };
 		F64DC4611BBEC85C007C2A1E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64DC4601BBEC85C007C2A1E /* SettingViewController.swift */; };
 		F64DC46A1BBEC8F8007C2A1E /* BaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64DC4691BBEC8F8007C2A1E /* BaseView.xib */; };
@@ -103,19 +99,6 @@
 		F61CA0A01C28471000032FC2 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		F61CA0A21C28CF7000032FC2 /* FlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
 		F61CA0A41C2AD99500032FC2 /* GKLocalPlayerUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKLocalPlayerUtil.swift; sourceTree = "<group>"; };
-		F61CA0A71C2AEE3B00032FC2 /* libNendAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNendAd.a; sourceTree = "<group>"; };
-		F61CA0A81C2AEE3B00032FC2 /* NADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADInterstitial.h; sourceTree = "<group>"; };
-		F61CA0A91C2AEE3B00032FC2 /* NADNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNative.h; sourceTree = "<group>"; };
-		F61CA0AA1C2AEE3B00032FC2 /* NADNativeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeClient.h; sourceTree = "<group>"; };
-		F61CA0AB1C2AEE3B00032FC2 /* NADNativeError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeError.h; sourceTree = "<group>"; };
-		F61CA0AC1C2AEE3B00032FC2 /* NADNativeImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeImageView.h; sourceTree = "<group>"; };
-		F61CA0AD1C2AEE3B00032FC2 /* NADNativeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeLabel.h; sourceTree = "<group>"; };
-		F61CA0AE1C2AEE3B00032FC2 /* NADNativeLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeLogger.h; sourceTree = "<group>"; };
-		F61CA0AF1C2AEE3B00032FC2 /* NADNativeTableViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeTableViewHelper.h; sourceTree = "<group>"; };
-		F61CA0B01C2AEE3B00032FC2 /* NADNativeTableViewPlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeTableViewPlacement.h; sourceTree = "<group>"; };
-		F61CA0B11C2AEE3B00032FC2 /* NADNativeViewRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADNativeViewRendering.h; sourceTree = "<group>"; };
-		F61CA0B21C2AEE3B00032FC2 /* NADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADView.h; sourceTree = "<group>"; };
-		F61CA0B31C2AEE3B00032FC2 /* NADView_readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NADView_readme.txt; sourceTree = "<group>"; };
 		F61CA0B61C2AEED700032FC2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		F61CA0B81C2AEEE800032FC2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		F61CA0BA1C2AEEF800032FC2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -133,7 +116,6 @@
 		F6727D7F1C5CD135002AFC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SettingView.xib; sourceTree = "<group>"; };
 		F6727D821C5CD139002AFC59 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SettingView.strings; sourceTree = "<group>"; };
 		F698EE6F1C60EEDF005B1F5C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/StartView.strings; sourceTree = "<group>"; };
-		F698EE711C60F0BC005B1F5C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F698EE721C60FA09005B1F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		F698EE7B1C60FD8E005B1F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F698EE7D1C60FD93005B1F5C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -149,7 +131,6 @@
 		F6AB55111BF4156E002D6123 /* timer_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer_white.png; sourceTree = "<group>"; };
 		F6B9B8BC1BBEE8F500654FBB /* Prefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefix.swift; sourceTree = "<group>"; };
 		F6B9B8BE1BC28AAB00654FBB /* VoiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceManager.swift; sourceTree = "<group>"; };
-		F6B9B8CF1BC5628600654FBB /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		F6BD15081C9853F000A9C9B8 /* tutorial-base-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-base-1.png"; sourceTree = "<group>"; };
 		F6BD15091C9853F000A9C9B8 /* tutorial-base-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-base-2.png"; sourceTree = "<group>"; };
 		F6BD150A1C9853F000A9C9B8 /* tutorial-base-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tutorial-base-3.png"; sourceTree = "<group>"; };
@@ -212,10 +193,7 @@
 			files = (
 				F61CA0BB1C2AEEF800032FC2 /* Security.framework in Frameworks */,
 				F61CA0B91C2AEEE800032FC2 /* ImageIO.framework in Frameworks */,
-				F61CA0B71C2AEED700032FC2 /* AdSupport.framework in Frameworks */,
 				F61CA0A11C28471000032FC2 /* SceneKit.framework in Frameworks */,
-				F6423BC21BE052D300C5514C /* iAd.framework in Frameworks */,
-				F61CA0B41C2AEE3B00032FC2 /* libNendAd.a in Frameworks */,
 				F6FE14531BD7E70700228EC4 /* AVFoundation.framework in Frameworks */,
 				51272F9E1BD37DD100FAD189 /* GameKit.framework in Frameworks */,
 			);
@@ -241,26 +219,6 @@
 				F61CA09C1C28467000032FC2 /* confetti.png */,
 			);
 			name = particle;
-			sourceTree = "<group>";
-		};
-		F61CA0A61C2AEE3B00032FC2 /* NendAd */ = {
-			isa = PBXGroup;
-			children = (
-				F61CA0A71C2AEE3B00032FC2 /* libNendAd.a */,
-				F61CA0A81C2AEE3B00032FC2 /* NADInterstitial.h */,
-				F61CA0A91C2AEE3B00032FC2 /* NADNative.h */,
-				F61CA0AA1C2AEE3B00032FC2 /* NADNativeClient.h */,
-				F61CA0AB1C2AEE3B00032FC2 /* NADNativeError.h */,
-				F61CA0AC1C2AEE3B00032FC2 /* NADNativeImageView.h */,
-				F61CA0AD1C2AEE3B00032FC2 /* NADNativeLabel.h */,
-				F61CA0AE1C2AEE3B00032FC2 /* NADNativeLogger.h */,
-				F61CA0AF1C2AEE3B00032FC2 /* NADNativeTableViewHelper.h */,
-				F61CA0B01C2AEE3B00032FC2 /* NADNativeTableViewPlacement.h */,
-				F61CA0B11C2AEE3B00032FC2 /* NADNativeViewRendering.h */,
-				F61CA0B21C2AEE3B00032FC2 /* NADView.h */,
-				F61CA0B31C2AEE3B00032FC2 /* NADView_readme.txt */,
-			);
-			path = NendAd;
 			sourceTree = "<group>";
 		};
 		F64DC45D1BBEC702007C2A1E /* View */ = {
@@ -307,21 +265,12 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		F6B9B8C01BC2B3C000654FBB /* Objc */ = {
-			isa = PBXGroup;
-			children = (
-				F6B9B8CF1BC5628600654FBB /* Bridge-Header.h */,
-			);
-			name = Objc;
-			sourceTree = "<group>";
-		};
 		F6B9B8D61BC68F9B00654FBB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				F61CA0921C26DE2A00032FC2 /* fonts */,
 				F6FE14541BD7EA0E00228EC4 /* icon */,
 				F6FE14661BD7EA0E00228EC4 /* images */,
-				F61CA0A61C2AEE3B00032FC2 /* NendAd */,
 				F61CA09F1C28468F00032FC2 /* particle */,
 				F6F3D6AC1C6B898F001A97E1 /* tutorial */,
 			);
@@ -416,7 +365,6 @@
 			children = (
 				F6B9B8BA1BBEE78500654FBB /* Frameworks */,
 				F6B9B8BB1BBEE8D300654FBB /* Model */,
-				F6B9B8C01BC2B3C000654FBB /* Objc */,
 				F6FA2F6D1BBEC5A800B66E61 /* Products */,
 				F6B9B8D61BC68F9B00654FBB /* Resources */,
 				F6FA2F6E1BBEC5A800B66E61 /* thikubi */,
@@ -521,12 +469,13 @@
 		F6FA2F641BBEC5A800B66E61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Taiju Aoki";
 				TargetAttributes = {
 					F6FA2F6B1BBEC5A800B66E61 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = G2GGZH6R2W;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -535,7 +484,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				English,
 				Base,
 				ja,
 			);
@@ -563,7 +512,6 @@
 				F6FE14861BD7EA0E00228EC4 /* speaker_off_white.png in Resources */,
 				F6BD15261C9853F000A9C9B8 /* timeAttack-base-1.png in Resources */,
 				F6BD151E1C9853F000A9C9B8 /* tutorial-base-3.png in Resources */,
-				F61CA0B51C2AEE3B00032FC2 /* NADView_readme.txt in Resources */,
 				F6FE14A31BD913F600228EC4 /* Icon-76.png in Resources */,
 				F61CA0941C26DE2A00032FC2 /* icomoon.ttf in Resources */,
 				F6FE14871BD7EA0E00228EC4 /* speaker_on_black.png in Resources */,
@@ -722,7 +670,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				F6FA2F791BBEC5A800B66E61 /* Base */,
-				F698EE711C60F0BC005B1F5C /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -734,17 +681,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -778,17 +736,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -807,6 +776,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -815,19 +785,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Taiju Aoki (NKQPU8EQT4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taiju Aoki (NKQPU8EQT4)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2GGZH6R2W;
 				INFOPLIST_FILE = thikubi/Base.lproj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/NendAd",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.thikubi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "12802acf-42ee-44ed-a180-c3f9f376b458";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridge-Header.h";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -835,19 +804,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Taiju Aoki (G2GGZH6R2W)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Taiju Aoki (G2GGZH6R2W)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G2GGZH6R2W;
 				INFOPLIST_FILE = thikubi/Base.lproj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/NendAd",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.thikubi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2bd6128b-b336-4836-b5f8-f6bc52e6e036";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridge-Header.h";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
