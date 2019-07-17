@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ContentViewControllerDelegate: class {
-    func contentViewController(contentViewController: ContentViewController, pageIndex index: Int)
+    func contentViewController(_ contentViewController: ContentViewController, pageIndex index: Int)
 }
 
 class ContentViewController: UIViewController {
@@ -29,15 +29,15 @@ class ContentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let type = (!NSUserDefaults.standardUserDefaults().boolForKey(Keys.FIRST_LAUNCH)) ? "tutorial":"timeAttack"
+        let type = (!UserDefaults.standard.bool(forKey: Keys.FIRST_LAUNCH)) ? "tutorial":"timeAttack"
         let regionCode = String(localizeKey: Keys.REGION_CODE)
         let imageName = String(format: "%@-%@-%d", type, regionCode, pageIndex)
         self.imageView.image = UIImage(named: imageName)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         delegate?.contentViewController(self, pageIndex: pageIndex)
     }

@@ -22,7 +22,7 @@ var useSound = true
 var sSecond = 0
 var second = 0
 
-let userDefaults = NSUserDefaults.standardUserDefaults()
+let userDefaults = UserDefaults.standard
 
 func RGB(r: Int, g: Int, b: Int) -> UIColor {
     return UIColor(red: CGFloat(r)/255, green: CGFloat(g)/255, blue: CGFloat(b)/255, alpha: 1.0)
@@ -37,7 +37,7 @@ func ICON_FONT(size: CGFloat) -> UIFont {
 }
 
 extension String {
-    init(localizeKey: String, _ arguments: CVarArgType...)  {
+    init(localizeKey: String, _ arguments: CVarArg...)  {
         if arguments.count == 1 {
             self = String.localizedStringWithFormat(NSLocalizedString(localizeKey, comment: ""), arguments[0])
         } else if arguments.count == 2 {

@@ -10,9 +10,9 @@ import UIKit
 import GameKit
 
 class Utils {
-    
-    static func scoreToColor(score: Int) -> UIColor {
-        
+
+    static func scoreToColor(_ score: Int) -> UIColor {
+
         var chikubiColor: UIColor!
         // 茶色->ピンク色にするための調整
         let adjust: Int = (NORMAL_SCORE - EASY_SCORE)/20
@@ -63,58 +63,58 @@ class Utils {
         } else {
             chikubiColor = UIColor(red:CGFloat(score)/255, green:(CGFloat(score) - 148)/255, blue:(CGFloat(score) - 49)/255, alpha:1.0)
         }
-        
+
         return chikubiColor
     }
-    
+
     static func getPointLabel(mode: Mode, route: TouchType, point: Int) -> UILabel {
-        
+
         var strPoint: String!
-        
+
         // 見た目上の数値を操作
         switch mode {
-        case .Easy:
+        case .easy:
             strPoint = String(point * 5 / 2)
-        case .Normal:
+        case .normal:
             strPoint = String(point * 5)
-        case .Hard:
+        case .hard:
             strPoint = String(point * 10)
         }
-        
+
         // テキスト＆文字色設定
         var pointColor: UIColor = UIColor()
         switch route {
-        case .Chikubi:
+        case .chikubi:
             strPoint = "+ " +  strPoint
-            pointColor = UIColor.whiteColor()
-        case .Around:
+            pointColor = UIColor.white
+        case .around:
             strPoint = "+ " +  strPoint
             pointColor = UIColor(red:255/255, green:107/255, blue:206/255, alpha:1.0)
-        case .Outside:
+        case .outside:
             strPoint = "- " +  strPoint
-            pointColor = UIColor.blackColor()
+            pointColor = UIColor.black
         }
-        
-        let fontSize: CGFloat = (route == .Chikubi) ? 160:70
+
+        let fontSize: CGFloat = (route == .chikubi) ? 160:70
         let attrStr_point: NSMutableAttributedString = NSMutableAttributedString(string: strPoint)
-        let attributes: [String : AnyObject] = [
-            NSFontAttributeName: UIFont(name: "Futura-CondensedMedium", size: fontSize)!,
-            NSStrokeWidthAttributeName: 5,
-            NSStrokeColorAttributeName: pointColor,
+        let attributes: [NSAttributedString.Key : Any] = [
+            NSAttributedString.Key.font: UIFont(name: "Futura-CondensedMedium", size: fontSize)!,
+            NSAttributedString.Key.strokeWidth: 5,
+            NSAttributedString.Key.strokeColor: pointColor,
         ]
         attrStr_point.addAttributes(attributes, range:NSMakeRange(0, attrStr_point.length))
-        
+
         let pointLabel: UILabel = UILabel()
         pointLabel.adjustsFontSizeToFitWidth = true
         pointLabel.attributedText = attrStr_point
-        pointLabel.frame = CGRectMake(0, 0, 320, 160)
-        pointLabel.textAlignment = NSTextAlignment.Center
-        
+        pointLabel.frame = CGRect(x: 0, y: 0, width: 320, height: 160)
+        pointLabel.textAlignment = NSTextAlignment.center
+
         return pointLabel
     }
-    
+
     static func getGameOverStr(mode: Mode) -> String {
-        
+
         let textArray1 = [
             String(localizeKey: Keys.GAME_OVER_STR + "1"),
             String(localizeKey: Keys.GAME_OVER_STR + "2"),
@@ -124,7 +124,7 @@ class Utils {
             String(localizeKey: Keys.GAME_OVER_STR + "6"),
             String(localizeKey: Keys.GAME_OVER_STR + "7")
         ]
-        
+
         let textArray2 = [
             String(localizeKey: Keys.CHIKUBI_TRIVIA + "1"),
             String(localizeKey: Keys.CHIKUBI_TRIVIA + "2"),
@@ -135,7 +135,7 @@ class Utils {
             String(localizeKey: Keys.CHIKUBI_TRIVIA + "7"),
             String(localizeKey: Keys.CHIKUBI_TRIVIA + "8")
         ]
-        
+
         let textArray3 = [
             String(localizeKey: Keys.CHIKUBI_TRIVIA + "9"),
             String(localizeKey: Keys.CHIKUBI_TRIVIA + "10"),
@@ -147,45 +147,45 @@ class Utils {
             String(localizeKey: Keys.CHIKUBI_TRIVIA + "16"),
             String(localizeKey: Keys.CHIKUBI_TRIVIA + "17")
         ]
-        
-        
+
+
         // コンプリートチェック用
         var easy_dic: [String:String] = [:]
         var normal_dic: [String:String] = [:]
         var hard_dic: [String:String] = [:]
-        if let ed = userDefaults.objectForKey(Keys.EASY_DIC) {
+        if let ed = userDefaults.object(forKey: Keys.EASY_DIC) {
             easy_dic = ed as! [String : String]
         }
-        if let nd = userDefaults.objectForKey(Keys.NORMAL_DIC) {
+        if let nd = userDefaults.object(forKey: Keys.NORMAL_DIC) {
             normal_dic = nd as! [String : String]
         }
-        if let hd = userDefaults.objectForKey(Keys.HARD_DIC) {
+        if let hd = userDefaults.object(forKey: Keys.HARD_DIC) {
             hard_dic = hd as! [String : String]
         }
-        
+
         var game_over_str: String = ""
         switch mode {
-        case .Easy:
+        case .easy:
             let rand: UInt32 = arc4random() % UInt32(textArray1.count)
             game_over_str = textArray1[Int(rand)]
             // コンプリートチェック用
             let randStr: String = "\(rand + 1)" // 0はなんとなくよくないので+1しとく
             easy_dic[randStr] = "1"
-            userDefaults.setObject(easy_dic, forKey:Keys.EASY_DIC)
-        case .Normal:
+            userDefaults.set(easy_dic, forKey:Keys.EASY_DIC)
+        case .normal:
             let rand: UInt32 = arc4random() % UInt32(textArray2.count)
             game_over_str = textArray2[Int(rand)]
             // コンプリートチェック用
             let randStr: String = "\(rand + 1)" // 0はなんとなくよくないので+1しとく
             normal_dic[randStr] = "1"
-            userDefaults.setObject(normal_dic, forKey:Keys.NORMAL_DIC)
-        case .Hard:
+            userDefaults.set(normal_dic, forKey:Keys.NORMAL_DIC)
+        case .hard:
             let rand: UInt32 = arc4random() % UInt32(textArray3.count)
             game_over_str = textArray3[Int(rand)]
             // コンプリートチェック用
             let randStr: String = "\(rand + 1)" // 0はなんとなくよくないので+1しとく
             hard_dic[randStr] = "1"
-            userDefaults.setObject(hard_dic, forKey:Keys.HARD_DIC)
+            userDefaults.set(hard_dic, forKey:Keys.HARD_DIC)
         }
         userDefaults.synchronize()
         // コンプリートチェック
@@ -193,22 +193,22 @@ class Utils {
         let normal_complete: Bool = normal_dic.count >= textArray2.count
         let hard_complete: Bool = hard_dic.count >= textArray3.count
         if easy_complete && normal_complete && hard_complete {
-            reportAchievementIdentifier("game_over", percentComplete:100)
+            reportAchievementIdentifier(identifier: "game_over", percentComplete:100)
         }
-        
+
         return game_over_str
     }
-    
+
     // achievement送信
     private static func reportAchievementIdentifier(identifier: String, percentComplete percent: Float) {
-        
+
         let achievement: GKAchievement = GKAchievement(identifier:identifier)
         achievement.percentComplete = Double(percent)
-        GKAchievement.reportAchievements([achievement], withCompletionHandler:  {
-            (error:NSError?) -> Void in
-            if error != nil { print("error: \(error)") }
+        GKAchievement.report([achievement], withCompletionHandler:  {
+            (error:Error?) -> Void in
+            if error != nil { print("error: \(String(describing: error))") }
         })
     }
 
-    
+
 }
